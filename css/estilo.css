@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    scroll-behavior: smooth;
+}
+.navegacion{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+.navboton{
+    background-color: red;
+    margin: 5px;
+    border-radius: 3px;
+    transition: 0.4s;
+    font-size: 1.3  em;
+}
+.navboton:hover{
+    background-color: rgb(197, 9, 9);
+   
+}
+
+/* botonnav */
+.botonnumero{
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 12px;
+    font-size: 1.4em;
+}
+header{
+    border-radius: 0px 0px 192px 192px / 0px 0px 120px 120px;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(../imagenes/camilo_banner.jpg);
+}
+/* Quien soy */
+
+#quien{
+    padding: 50px;
+    width: 100%;
+    min-height: 10vh;
+    background: rgb(19,16,15);
+    background: linear-gradient(0deg, rgba(19,16,15,0) 16%, rgba(0,0,0,1) 94%);
+}
+#quien .marco{
+    overflow: hidden;
+    
+    height: 850px;
+    position: relative;
+    z-index: 4;
+
+}
+
+#quien .marco img{
+    height: 100%;
+    object-fit: contain   ;
+}
+#quien .marco .circulo{
+    z-index: -1;
+    width: 190px;
+    height: 190px;
+    background-color: red;
+    position: absolute;
+    animation: circulocirculo 4s infinite;
+   
+}
+@keyframes circulocirculo{
+    0%{
+        top: 10%;
+        left: 0%;
+        rotate: 0deg;
+    }
+    50%{
+        top: 10%;
+        left: 60%;
+        rotate: 45deg;
+    }
+    75%{
+        top: 80%;
+        left: 50%;
+        rotate: 90deg;
+    }
+    100%{
+        top: 10%;
+        left: 0%;
+        rotate: 180deg;
+    }
+
+}
+#quien .marco img{
+    z-index: 99;
+}
+
+#quien article{}
+#quien article h2{}
+#quien article p{}
+#quien article .texto{}
+#quien article .texto .punto{
+    
+}
+#quien article .iconos{}
+#quien article .iconos a{
+    color: red;
+    font-size: 1.9em;
+    margin: 7px;
+}
+/* GALERIA */
+#galeria{
+
+}
+.desarrollo{
+
+}
+.vmodal{
+    z-index: 99999999999999;
+}
+.dw{
+    background-color: transparent;
+}
+.navbara{
+    text-align: center;
+    margin-bottom:10px;
+    width: 60%;
+    margin: auto;
+}
+.navbara button{
+    background-color: red;
+    font-size: 1.4em;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 5px;
+    transition: 0.4s;
+}
+.lineaa{
+    width: 90%;
+    border: 10px solid rgb(255, 0, 0);
+    margin: auto;
+    border-radius: 5px;
+    
+}
+.navbara button:hover{
+    background-color: rgb(186, 4, 4);
+    transform: scale(1.1);
+}
+.caja_galeria{
+    width: 100%;
+    justify-content: center;
+    
+    display: none;
+    
+}
+
+.tgaleria{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.botonp{
+    width: 100px;
+    height: 60px;
+    background-color: red;
+}
+
+.proyectos{
+    margin-top: 90px;
+}
+.titulogale{
+    width: 100%;
+    text-align: center;
+}
+.foto{
+    transition: 0.4s ;
+}
+.foto:hover {
+    box-shadow: 10px 10px 96px -32px rgba(255,10,10,1);
+}
+.imagenp{
+    object-fit: contain;
+}
+
+/* Ventana */
+.ventana{
+    margin-top: 10%;
+}
+
+/* HABILIDADES */
+#habilidades{
+    width: 90%;
+}
+/* Grafica */
+#contenedor{
+    
+    
+
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateX(50px);
+}
+
+#contenedor .gris {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(110, 113, 105);
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+
+   
+}
+
+#contenedor .rectangulo{
+    height: 100%;
+    width: 2%;
+    background-color:red;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    transition: 0.4s;
+
+}
+
+#contenedor .gris .circulo{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(58, 54, 54);
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top:50%;
+    transition: 0.4s;
+    transform: translate(-30%, -50%);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contenedor .rectangulo2{
+    height: 100%;
+    width: 2%;
+    background-color:red;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    transition: 0.4s;
+
+}
+
+#contenedor .gris .circulo2{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(58, 54, 54);
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top:50%;
+    transition: 0.4s;
+    transform: translate(-30%, -50%);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#contenedor .rectangulo3{
+    height: 100%;
+    width: 2%;
+    background-color:red;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    transition: 0.4s;
+
+}
+
+#contenedor .gris .circulo3{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(58, 54, 54);
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top:50%;
+    transition: 0.4s;
+    transform: translate(-30%, -50%);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#contenedor .rectangulo4{
+    height: 100%;
+    width: 2%;
+    background-color:red;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    transition: 0.4s;
+
+}
+
+#contenedor .gris .circulo4{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(58, 54, 54);
+    z-index: 3;
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top:50%;
+    transition: 0.4s;
+    transform: translate(-30%, -50%);
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* hovers */
+
+#habilidades:hover .uno .rectangulo{
+    width: 74%;
+}
+#habilidades:hover .uno .circulo{
+    left: 74%;
+}
+
+
+#habilidades:hover .dos .rectangulo{
+    width: 54%;
+}
+#habilidades:hover .dos .circulo{
+    left: 54%;
+}
+
+#habilidades:hover .tres .rectangulo{
+    width: 84%;
+}
+#habilidades:hover .tres .circulo{
+    left: 84%;
+}
+
+#habilidades:hover .cuatro .rectangulo{
+    width: 64%;
+}
+#habilidades:hover .cuatro .circulo{
+    left: 64%;
+}
+
+
+
+#habilidades:hover .uno .rectangulo2{
+    width:  85%;
+}
+
+#habilidades:hover .uno .circulo2{
+    left: 85%;
+}
+
+
+
+#habilidades:hover .dos .rectangulo3{
+    width:  85%;
+}
+
+#habilidades:hover .dos .circulo3{
+    left: 85%;
+}
+
+
+
+#habilidades:hover .tres .rectangulo4{
+    width:  90%;
+}
+
+#habilidades:hover .tres .circulo4{
+    left: 90%;
+}
+
+
+
+/* FIN DE LA GRAFICA */
+
+/* WUASAP */
+.wuasap{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-radius: 51%;
+}
+.wuasap img{
+    width: 100%;
+    height: 100%;
+}
+/* FOOTER */
+footer{
+    height: 10vh;
+    width: 100%;
+}
+
+/* ----------MEDIA LG ---------- */
+@media (max-width: 992px) { 
+    #quien .marco .circulo{
+        z-index: -1;
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        position: absolute;
+        animation: circulocirculo 4s infinite;
+       
+    }
+    #quien article p{
+        color: black;
+    }
+ }
